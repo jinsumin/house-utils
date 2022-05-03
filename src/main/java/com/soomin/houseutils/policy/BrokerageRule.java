@@ -1,6 +1,7 @@
 package com.soomin.houseutils.policy;
 
 import lombok.AllArgsConstructor;
+import org.springframework.lang.Nullable;
 
 /**
  * Created by soomin on 2022/04/28
@@ -11,6 +12,8 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class BrokerageRule {
     private Double brokeragePercent;
+
+    @Nullable
     private Long limitAmount;
 
     public Long calcMaxBrokerage(Long price) {

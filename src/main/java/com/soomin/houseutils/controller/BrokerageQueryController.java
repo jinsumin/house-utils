@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by soomin on 2022/04/28
- */
+ *
+ * 중개수수료가 얼마인지 조회하는 컨트롤러 */
 
 @RestController
 public class BrokerageQueryController {
